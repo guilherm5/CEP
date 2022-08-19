@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#0B64AF;
+}
+
+section{
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: white;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input{
+    
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all .5s;
+    
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color:#0B64AF;
+    color: white;
+    align-items: center;
+    transition: all .1s;
+}
+
+form button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#arquivo{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color:#0B64AF;
+    color: white;
+    border: 2px solid black;
+    align-items: center;
+    transition: all .1s;
+    text-align: center;
+}
+
+#arquivo:hover{
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+}
+
+
+.principal{
+    font-size: 2rem;
+    color: white;
+}
+
+
+@media (max-width: 510px){
+    section{
+        width: 400px;
+    }
+}
+@media (max-width: 410px){
+    section{
+        width: 300px;
+    }
+}

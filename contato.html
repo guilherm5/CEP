@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../estilo/form.css">
+</head>
+<body>
+    <section>
+        <h1>Contato</h1>
+        <form onSubmit="verifica()" name="dados" action="https://api.staticforms.xyz/submit" method="post">
+
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu Nome">
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu Email">
+
+            <label>Mensagem</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Assunto"></textarea>
+            <button type="submit">Enviar</button>
+
+            <label for="file" id="arquivo">Enviar arquivo</label>
+            <input type="file" name="arquivo" id="file">
+
+            <input type="hidden" name="accessKey" value="0f000725-4a92-46be-b356-0eda513715a1">
+
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/html/obrigado.html">
+        </form>
+    </section>
+
+    <script src="../script/form.js"></script>
+</body>
+</html>
